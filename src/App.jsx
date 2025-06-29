@@ -4,7 +4,6 @@ import Navigation from './routes/navigation/navigation.component'
 import Auth from './routes/auth/auth.component';
 import Shop from './routes/shop/shop.components';
 import Checkout from './routes/checkout/checkout.component';
-import CategoryProducts from './routes/category-products/category-products.component';
 
 function App() {
 

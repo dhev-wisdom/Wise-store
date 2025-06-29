@@ -5,7 +5,7 @@ import SignUpForm from "../../components/signup/sign-up-form.component";
 const Auth = () => {
     
     return (
-        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+        <div className='auth-container'>
             <SignIn />
             <SignUpForm />
         </div>

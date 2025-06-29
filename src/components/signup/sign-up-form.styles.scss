@@ -3,8 +3,21 @@
     flex-direction: column;
     width: 40%;
     max-width: 500px;
+    text-align: left;
 
     h2 {
         margin: 10px 0;
     }
+}
+
+@media (max-width: 767px) {
+  .sign-up-container {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+
+    h2 {
+        margin: 30px 0 10px;
+    }
+}
 }

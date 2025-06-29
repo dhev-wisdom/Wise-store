@@ -7,11 +7,12 @@ import Button from '../button/button.component';
 
 
 const CartDropdown = () => {
-    const {cartItems, itemsTotalAmount} = useContext(CartContext);
+    const {cartItems, itemsTotalAmount, setOpen} = useContext(CartContext);
     const navigate = useNavigate();
 
     const goToCheckout = () => {
         navigate('/checkout');
+        setOpen(false);
     }
 
     return (

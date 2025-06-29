@@ -32,8 +32,7 @@ const Checkout = () => {
             {cartItems.map((cartItem) =>  <CheckoutItem key={cartItem.id} cartItem={cartItem} />
             )}
 
-            <p>You have picked {cartItems.length} different items</p>
-            <p>Total number of items in cart - {cartItemsCount}</p>
+            <small>You have picked {cartItemsCount} items from {cartItems.length} categories</small>
 
             <h2 className='total'>Total - ${itemsTotalAmount}</h2>
         </div>
