@@ -5,6 +5,7 @@
     height: 350px;
     align-items: center;
     position: relative;
+    margin: 25px 0;
 
     .footer {
         width: 100%;
@@ -35,11 +36,5 @@
         button {
             opacity: 0.8;
         }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .product-card-component {
-        margin: 25px 0;
     }
 }
