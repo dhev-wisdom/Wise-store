@@ -34,9 +34,28 @@ a {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+
+@media (max-width: 639px) {
   body {
-    padding: 15px 20px;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  body {
+    padding: 12px 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    padding: 15px 25px;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    padding: 25px 50px;
   }
 }
 

@@ -30,7 +30,7 @@ const Navigation = () => {
     <Fragment>
         <NavigationContainer>
             <LogoContainer to='/'>
-                <img className='logo' style={{width: '30px'}} src="../../../public/assets/react.png" alt="Logo" />
+                <img className='logo' style={{width: '30px'}} src="/assets/react.png" alt="Logo" />
             </LogoContainer>
             <NavLinks>
                 <NavLink to='/shop'>
