@@ -15,10 +15,10 @@ const Checkout = () => {
                     <span>Product</span>
                 </div>
                 <div className="header-block">
-                    <span>Description</span>
+                    <span>Desc</span>
                 </div>
                 <div className="header-block">
-                    <span>Quantity</span>
+                    <span>Qty</span>
                 </div>
                 <div className="header-block">
                     <span>Price</span>
@@ -26,9 +26,9 @@ const Checkout = () => {
                 <div className="hide header-block">
                     <span>SubTotal</span>
                 </div>
-                <div className="header-block">
+                {/* <div className="header-block">
                     <span>Remove</span>
-                </div>
+                </div> */}
             </div>
             {cartItems.map((cartItem) =>  <CheckoutItem key={cartItem.id} cartItem={cartItem} />
             )}
