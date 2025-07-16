@@ -4,7 +4,7 @@ import { CartContext } from "../../contexts/cart.context.jsx";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import {PaymentFormContainer, FormContainer, PaymentButton} from './payment-form.styles.jsx';
 
-import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 const PaymentForm = () => {
     const stripe = useStripe();
@@ -50,11 +50,9 @@ const PaymentForm = () => {
         if (paymentResult.error) alert(paymentResult.error)
         else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
-                alert("Payment successful");
+                alert(`Payment of ${itemsTotalAmount} successful`);
             }
         }
-
-        console.log("paymentResult: ", paymentResult);
         
         };
 
