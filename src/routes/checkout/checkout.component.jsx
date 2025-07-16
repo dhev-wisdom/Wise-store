@@ -23,7 +23,7 @@ const Checkout = () => {
                 <div className="header-block">
                     <span>Price</span>
                 </div>
-                <div className="header-block">
+                <div className="hide header-block">
                     <span>SubTotal</span>
                 </div>
                 <div className="header-block">
