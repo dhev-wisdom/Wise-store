@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^3.7.0",
+    "@stripe/stripe-js": "^7.4.0",
+    "dotenv": "^17.2.0",
     "firebase": "^11.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.1",
     "sass": "^1.89.0",
+    "stripe": "^18.3.0",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
