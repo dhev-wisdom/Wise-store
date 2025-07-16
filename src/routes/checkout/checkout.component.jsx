@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 import Button from '../../components/button/button.component';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+import PaymentForm from '../../components/payment-form/payment-form.component';
 
 const Checkout = () => {
     const {cartItems, itemsTotalAmount, cartItemsCount} = useContext(CartContext);
@@ -32,9 +33,12 @@ const Checkout = () => {
             {cartItems.map((cartItem) =>  <CheckoutItem key={cartItem.id} cartItem={cartItem} />
             )}
 
-            <small>You have picked {cartItemsCount} items from {cartItems.length} categories</small>
+            <p>You have picked {cartItems.length} different items</p>
+            <p>Total number of items in cart - {cartItemsCount}</p>
 
             <h2 className='total'>Total - ${itemsTotalAmount}</h2>
+
+            <PaymentForm />
         </div>
     )
 }
