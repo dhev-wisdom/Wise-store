@@ -39,7 +39,7 @@ const Navigation = () => {
                 {currentUser ?
                     <div>
                     <NavLink as="span" style={{color: 'black', marginRight: '10px'}}>
-                        {currentUser.displayName.split[0] || currentUser.email}
+                        {currentUser.displayName.split(' ')[0] || currentUser.email}
                     </NavLink>
                     <NavLink as="span" style={{color: 'black'}} onClick={handleSignOut}>
                         SIGN OUT
