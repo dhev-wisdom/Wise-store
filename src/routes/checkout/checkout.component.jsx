@@ -27,7 +27,7 @@ const Checkout = () => {
                     <span>SubTotal</span>
                 </div>
                 <div className="header-block">
-                    <span>Remove</span>
+                    <span></span>
                 </div>
             </div>
             {cartItems.map((cartItem) =>  <CheckoutItem key={cartItem.id} cartItem={cartItem} />
