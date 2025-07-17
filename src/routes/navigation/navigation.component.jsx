@@ -39,7 +39,7 @@ const Navigation = () => {
                 {currentUser ?
                     <div>
                     <NavLink as="span" style={{color: 'black', marginRight: '10px'}}>
-                        {currentUser ? currentUser.displayName.split(' ')[0].toUppercase() : 'GUEST'}
+                        {currentUser ? currentUser.displayName.split(' ')[0].toUpperCase() : 'GUEST'}
                     </NavLink>
                     <NavLink as="span" style={{color: 'black'}} onClick={handleSignOut}>
                         SIGN OUT
