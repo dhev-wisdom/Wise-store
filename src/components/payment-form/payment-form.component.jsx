@@ -5,13 +5,15 @@ import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import {PaymentFormContainer, FormContainer, PaymentButton} from './payment-form.styles.jsx';
 
 import { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { useNavigate } from "react-router-dom";
 
 const PaymentForm = () => {
     const stripe = useStripe();
     const elements = useElements();
-    const { itemsTotalAmount } = useContext(CartContext);
+    const { setCartItems, itemsTotalAmount } = useContext(CartContext);
     const { currentUser } = useContext(UserContext);
     const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+    const navigate = useNavigate();
 
     const paymentHandler = async(e) => {
         e.preventDefault();
@@ -50,7 +52,9 @@ const PaymentForm = () => {
         if (paymentResult.error) alert(paymentResult.error)
         else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
-                alert(`Payment of $${itemsTotalAmount} successful`);
+                alert(`Payment of $${itemsTotalAmount} was successful`);
+                setCartItems([]);
+                navigate('/checkout-confirmation');
             }
         }
         
