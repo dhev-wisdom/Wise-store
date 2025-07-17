@@ -8,8 +8,8 @@ const CheckoutConfirm = () => {
         <p className="main-header">Thank you for shopping with <span>Wise Cloth Store</span></p>
         <p className="smaller-header">We hope to see you soon</p>
         <div className='button-container'>
-            <Button><Link to='/'>GO HOME</Link></Button>
-            <Button buttonType={BUTTON_TYPE_CLASSES.inverted}><Link to='/shop'>SHOP MORE</Link></Button>
+            <Link to='/'><Button>GO HOME</Button></Link>
+            <Link to='/shop'><Button buttonType={BUTTON_TYPE_CLASSES.inverted}>SHOP MORE</Button></Link>
         </div>
         </div>
     )
